@@ -1,0 +1,129 @@
+/** Parte 1 **/
+/** https://css-tricks.com/snippets/css/using-font-face/ **/
+/** https://www.fontget.com/font/in-your-face-joffrey/ **/
+@font-face {
+  font-family: 'In Your Face Joffrey!';
+  src: url('../font/In\ your\ face\,\ joffrey!.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+/** Usamos la fuente definida arriba **/
+body {
+  background-color: black;
+  font-family: 'In Your Face Joffrey!', sans-serif;
+}
+
+/** https://wpsites.net/web-design/add-different-background-image-to-cover-full-body-on-specific-page/ **/
+body.home {
+  background-image: url('../assets/backgrounds/loading.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.homelement{
+  width: 600px;
+  height: 209px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#logo {
+  background-image: url('../assets/backgrounds/among-us-logo.png');
+}
+
+button {
+  all: unset;
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+#lobby > img{
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/** Parte 2 **/
+
+body.lobby {
+  background-image: url('../assets/backgrounds/Stars.png');
+}
+
+.buttonBack {
+  top: 0;
+  left: 0;
+  position: fixed;
+  font-size: 2rem;
+}
+
+.lobbyBtn {
+  
+  text-align: right;
+  position: fixed;
+  right: 0;
+  font-size: 2rem;
+}
+
+/** Parte 3 **/
+#characters > #red{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+}
+
+#characters > #blue{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+}
+
+
+#characters > #pink{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-65%, -40%);
+}
+
+#characters > #green{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-65%, -65%);
+}
+
+/** Parte 4 **/
+
+.selectPlayer {
+  width: 30%;
+  height: 400px;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  text-align: center;
+  font-size: 4rem;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.selectChar:hover {
+  background-color: black;
+}

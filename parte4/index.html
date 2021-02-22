@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Clon básico de among us">
+    <meta name="author" content="Salesianos Zaragoza">
+    <title>Among US - jQuery</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+  </head>
+<body class="home">
+  <!-- https://www.w3schools.com/html/html5_audio.asp -->
+  <audio loop id="backgroundmusic" src="../assets/sound/Among_Us_Background_Music.mp3" type="audio/mp3"></audio> 
+  <!-- Creamos el logo y los botones de la pantalla de Home-->
+  <div id="homescreen">
+    <div id="logo" class="homelement"></div>
+    <div id="botones" class="homelement">
+      <button class="buttonHome">LOCAL</button>
+      <button class="buttonHome">ONLINE</button>
+      <button class="playmusic">PLAY MUSIC</button>
+    </div>
+  </div>
+  <div id="selectPlayer" class="selectPlayer">
+    <h4>Selecciona jugador</h4>
+    <img src="../assets/characters/red.png" class="selectChar" width="50" alt="red">
+    <img src="../assets/characters/blue.png" class="selectChar" width="50" alt="blue">
+    <img src="../assets/characters/green.png" class="selectChar" width="50" alt="green">
+    <img src="../assets/characters/pink.png" class="selectChar" width="50" alt="pink">
+  </div>
+  <!-- Preparamos el div para el juego-->
+  <div id="lobby">
+    <button class="playmusic lobbyBtn">PLAY MUSIC</button>
+    <button class="buttonBack">Volver</button>
+    <img src='../assets/backgrounds/Lobby.png'/>
+    <div id="characters">
+    </div>
+  </div>
+  <script src="game.js"></script>  
+</body>
+</html>
